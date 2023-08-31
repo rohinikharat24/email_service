@@ -93,14 +93,5 @@ class SendEventEmails(APIView):
 
         return Response({"message": "Event emails sent successfully", "email_contents": email_contents})
 
-# class SendEventEmailsCronJob(CronJobBase):
-#     RUN_EVERY_MINS = 1440  # Run the task every 24 hours
-
-#     schedule = Schedule(run_every_mins=RUN_EVERY_MINS)
-#     code = 'events.views.SendEventEmails'  # A unique code for this cron job
-
-#     def do(self):
-#         SendEventEmails()
-# Create your views here.
 
 
