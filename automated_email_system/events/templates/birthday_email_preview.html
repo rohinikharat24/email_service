@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Birthday Email Previews</title>
+</head>
+<body>
+    <h1>Birthday Email Previews</h1>
+    {% if email_previews %}
+        <ul>
+            {% for email_preview in email_previews %}
+                <li>{{ email_preview }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No birthday emails today.</p>
+    {% endif %}
+</body>
+</html>
